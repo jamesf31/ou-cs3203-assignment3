@@ -1,6 +1,25 @@
+import java.util.Scanner;
 
 public class Driver {
-	int sum(int[] intArray) {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		int[] numbers = new int[5];
+		
+		System.out.println("Enter 5 integers: ");
+		
+		for (int i = 0; i < numbers.length; i++) {
+			numbers[i] = input.nextInt();
+		}
+		
+		System.out.println("Sum of your numbers: " + sum(numbers));
+		System.out.println("Product of your numbers: " + product(numbers));
+		
+		input.close();
+	}
+	
+	static int sum(int[] intArray) {
 		int sum = 0;
 		
 		for (int i = 0; i < intArray.length; i++) {
@@ -10,13 +29,14 @@ public class Driver {
 		return sum;
 	}
 	
-	int product(int[] intArray) {
-		int product = 0;
-		
-		for (int i = 0; i < intArray.length; i++) {
+	static int product(int[] intArray) {
+		int product = intArray[0];
+
+		for (int i = 1; i < intArray.length; i++) {
 			product = product*intArray[i];
 		}
-		
+
 		return product;
 	}
+	
 }
