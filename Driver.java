@@ -39,4 +39,13 @@ public class Driver {
 		return product;
 	}
 	
+	static int[] reverse(int[] intArray) {
+		int[] reversedArray = new int[intArray.length];
+		
+		for (int i = 0; i < intArray.length; i++) {
+			reversedArray[intArray.length-i-1] = intArray[i];
+		}
+		
+		return reversedArray;
+	}
 }
