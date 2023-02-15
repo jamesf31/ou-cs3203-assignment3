@@ -15,6 +15,11 @@ public class Driver {
 		
 		System.out.println("Sum of your numbers: " + sum(numbers));
 		System.out.println("Product of your numbers: " + product(numbers));
+		System.out.println("Reverse of your numbers: ");
+		int[] reversedArray = reverse(numbers);
+		for (int i = 0; i < reversedArray.length; i++) {
+			System.out.print(reversedArray[i] + " ");
+		}
 		
 		input.close();
 	}
