@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Driver {
 	
+	//Takes input and returns sum and product of the numbers
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -19,6 +20,7 @@ public class Driver {
 		input.close();
 	}
 	
+	// Finds the sum of the numbers
 	static int sum(int[] intArray) {
 		int sum = 0;
 		
@@ -29,6 +31,7 @@ public class Driver {
 		return sum;
 	}
 	
+	//Finds the product of the numbers
 	static int product(int[] intArray) {
 		int product = intArray[0];
 
